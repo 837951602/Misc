@@ -1,0 +1,15 @@
+```
+encode("'1,2'",['FILL','NO_IE_SRC']).length
+392
+encode("[].slice.call('12')",['FILL','NO_IE_SRC']).length
+392
+encode("'f,f'",['FILL','NO_IE_SRC']).length
+404
+encode("[].slice.call('ff')",['FILL','NO_IE_SRC']).length
+402
+encode("'f,f'",['FILL','IE_SRC']).length
+414
+encode("[].slice.call('ff')",['FILL','IE_SRC']).length
+410
+```
+A single ',' at the end of the string can't be expressed with its neighbors(it doesn't have two). With word around it's also expensive to slice-call-en it. So just find /.,./
