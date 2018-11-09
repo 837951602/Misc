@@ -5,28 +5,33 @@
 <tr><td>g.hostile mob drop</td><td>Pn Pf</td><td>Monsters spawn in a distance range and may move onto open trapdoor, falling down and being flushed for falling damage</td><td>-</td></tr>
 </table>
 
-###Work Reference:
+<h3>Work Reference:</h3>
 
 * g: Resource generator
 
-###Requirement Reference:
+<h3>Requirement Reference:</h3>
 
 * Bb: Need to break blocks that usually unbreakable
-* Jc: Require Java crash
+* Bc: Need sand color changer(before 1.13)
+* Bd: Need special item duplicating
+* Jc: Require Java crash or force quit
 * Js: Require Java Stack unintended behavior
-* Jx: Require Java force quit
+* Pc: Require a non-AFK player(including active macro)
+* Pt: Require sometimes a non-AFK player
 * Pk: Require a player holding keys(can't chat, can't craft, etc.)
 * Pp: Require a player at the exact place
 * Pn: Require a player nearby
 * Pf: Require player not nearby(or maybe can't be loaded)
+* Rb: Require special biome
+* Rc: Require special structure
 * Rp: Require end portal usage
 * Rs: Require world spawn usage
 * Sx: Need more item than a world provide
 * Su: Need unrenewable item
-* V(version): Should be in the version range
+* V: Should be in the version range
 * /u: usually so
 
-###Author Reference:
+<h3>Author Reference:</h3>
 
 * ?: Not sure who made it
 * -: Was created from the early period when Minecraft was not popular or by lots of people as soon as the based feature appear
