@@ -1,8 +1,11 @@
+# PS. Testing. Quite incomplete.
+
 <table>
 <tr><th>Work</th><th>Requirement</th><th>Description</th><th>Author</th></tr>
 <tr><td>g.general mobdrop, item duplicate</td><td>Rp Rs Bb/u</td><td>Die while reaching end portal duplicates the mob.<br>Usually lava can do this, but sometimes we need other damage</td><td>?</td></tr>
 <tr><td>g.general block duplicate</td><td>Jc Pk</td><td>Large number of block updates(rail, sign, etc.) stop item from being consumed by player and NBT from being stored<br>Used to create skeleton skull before 1.13</td><td>Panda4994</td></tr>
 <tr><td>g.hostile mob drop</td><td>Pn Pf</td><td>Monsters spawn in a distance range and may move onto open trapdoor, falling down and being flushed for falling damage</td><td>-</td></tr>
+<tr><td>obtain info from outside of game without console</td><td>Mf V(1.9-)</td><td>Corner structure block reloads the structure when powered</td><td>chyx</td></tr>
 </table>
 
 <h3>Work Reference:</h3>
@@ -16,6 +19,11 @@
 * Bd: Need special item duplicating
 * Jc: Require Java crash or force quit
 * Js: Require Java Stack unintended behavior
+* Mc: Need to be built in creative mode
+* Mi: Need to be built in creative mode with inventory editor
+* Mo: Need to be operator or with cheat on
+* Mm: Need command block
+* Mf: Need file access
 * Pc: Require a non-AFK player(including active macro)
 * Pt: Require sometimes a non-AFK player
 * Pk: Require a player holding keys(can't chat, can't craft, etc.)
