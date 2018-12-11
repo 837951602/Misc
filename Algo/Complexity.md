@@ -5,3 +5,4 @@
 5. Any calculating is O(1) if the 2k-bit version can be done with O(1) k-bit version
 6. Any calculating is O(1) if a O(1) calculating defined in 5 return it as part of answer
 7. A RAM contains n^O(1) units, where each unit can store an integer, a reference or another RAM(that's to avoid insufficant memory)
+8. When reading from RAM treating integer as RAM, or treating RAM as integer, it turns into such kind of type containing random value
