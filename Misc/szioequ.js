@@ -32,8 +32,8 @@ function std(x) {
     if (P(s[1]) && s[2] == 'null') return 'mov 0 '+s[1];
     if (X(s[1]) < (s[2] == 'null')) return 'nop';
     if (I(s[1]) && P(s[2])) {
-      if (+s[2]>100) s[2]='100';
-      if (+s[2]<0) s[2]='0';
+      if (+s[1]>100) s[1]='100';
+      if (+s[1]<0) s[1]='0';
     }
     return s.join(' ');
   case 'jmp':
