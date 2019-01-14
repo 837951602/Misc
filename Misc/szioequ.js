@@ -75,7 +75,7 @@ function std(x) {
     return x;
   case 'dgt':
     check([V]);
-    if (I(s[1])) {
+    if (I(s[1]) || s[1]=='acc') {
       if (s[1]!='0' && s[1]!='1' && s[1]!='2')
         return 'mov 0 acc';
     }
