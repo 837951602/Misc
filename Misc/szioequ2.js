@@ -13,7 +13,7 @@ function std(x) {
   for (i=1; i<s.length; i++)
     for (j=i+1; j<s.length; j++)
       q += p(s[i]) && s[i]==s[j];
-  if (s[0]=='mov' < q) throw 0;
+  if ((s[0]=='mov') < q) throw 0;
   function check(u) {
     if (s.length != u.length+1) throw 0;
     for (i=1; i<s.length; i++) {
