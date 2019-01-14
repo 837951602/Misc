@@ -110,6 +110,8 @@ function std(x) {
     if (P(s[1]) && (+s[2]>100)) return 'tgt 101 '+s[1];
     if (P(s[2]) && (+s[1]>99)) return 'tgt 0 '+s[2];
     if (P(s[1]) && (+s[2]<1)) return 'tgt 0 '+s[1];
+    if (P(s[1]) && (s[2]=='1')) return std('teq 0 '+s[1]);
+    if (P(s[2]) && (+s[1]>99)) return std('teq 100 '+s[2]);
     return s.join(' ');
   case 'tcp':
     check([V,V]);
