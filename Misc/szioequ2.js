@@ -85,7 +85,7 @@ function std(x) {
       if (s[1]!='0' && s[1]!='1' && s[1]!='2')
         return std('mov '+s[2]+' null');
     }
-    if (I(s[2])) s[2]=s[2]%10 || (s[2]<0 && '-10');
+    if (I(s[2])) s[2]=s[2]%10 || (s[2]<0 ? '-10' : '0');
     if (s[1]=='0' && s[2]=='acc') return 'nop';
     return s.join(' ');
   case 'teq':
