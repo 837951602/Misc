@@ -131,6 +131,9 @@ function std(x) {
     if (I(s[3])) {
       if (+s[3]<0) s[3]='0';
     }
+    if (+s[2] + +s[3] > 1800) {
+      s[3] = 1800 - s[2];
+    }
     return s.join(' ');
   default:
     throw 0;
