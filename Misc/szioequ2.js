@@ -3,7 +3,7 @@ function X(x) { return /^x[0-3]$/.test(x); }
 function p(x) { return P(x) || X(x); }
 function r(x) { return x=='acc' || x=='dat'; }
 function R(x) { return r(x) || p(x) || x=='null'; }
-function L(x) { return /^[1-9]|1[0-5]$/.test(x); }
+function L(x) { return /^[1-9]$|^1[0-5]$/.test(x); }
 function I(x) { return /^-?[1-9]\d{0,2}$/.test(x) || x=='0'; }
 function V(x) { return I(x) || R(x); }
 
