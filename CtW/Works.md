@@ -10,6 +10,7 @@
 <tr><td>g.gold</td><td>Pp</td><td>make pigmans angry and let one infect another</td><td>-</td></tr>
 <tr><td>g.slimeball</td><td>Pp</td><td>drown or anyway to slime</td><td>-</td></tr>
 <tr><td>g.crops</td><td>V(1.8-)</td><td>Let farmer(villager) farm.<br>For items with different form of seeds, give the farmer 8 stacks of seeds and hopper away crops;<br>For the same one, have another hungry villager but hopper away the food given to it</td><td>-</td></tr>
+<tr><td>g.pumpkin/melon</td><td></td><td>Detectly/Timerly piston-push and hopper/piston away</td><td>-</td></tr>
 <tr><td>obtain info from outside of game without console</td><td>Mf V(1.9-)</td><td>Corner structure block reloads the structure when powered</td><td>chyx</td></tr>
 </table>
 
