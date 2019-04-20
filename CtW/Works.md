@@ -14,6 +14,7 @@
 <tr><td>obtain info from outside of game without console</td><td>Mf V(1.9-)</td><td>Corner structure block reloads the structure when powered<br>Alternatively, you can "reload" with <code>datapack enable/disable %any%</code></td><td>chyx, Marcono1234, ?, -</td></tr>
 <tr><td>convert long long into two ints</td><td>Mm V(1.14-)</td><td>data get with scale=2^-32 to get high and <code>modify</code> into an <code>int</code> for low</td><td>-/?</td></tr>
 <tr><td>UUID Randomer</td><td>Mm V(1.13-)</td><td>data get a UUID with scale=n*2^-63 to get random ranged [-n,n)</td><td>-/?</td></tr>
+<tr><td>Key for chest in different language</td><td>Mm</td><td>summon a mob with translated name and use selector `@e[name=&lt;The translation result&gt;]` to get current lang, then satisfy the chest's `Lock`</td><td>-/?</td></tr>
 <tr><td>Circuit</td><td></td><td>Multi redstone wire pointing to solid block with redstone torch attached is a NOR gate. dd number of NOT gate is a clock. Get ispowered per distance with torch to know exact power level</td><td>-</td></tr>
 <tr><td>Dense horizonal iron screen</td><td></td><td>Piston taking 1t input inverts this pixel and one below. Xor back to turn picture into signal.</td><td>Dico-?</td></tr>
 <tr><td>Dense horizonal lamp screen</td><td></td><td>Output of piston with redstone block face can be switched to any intended with direct&through-iron alternated(assuming through-iron actived, from down to up, whether lowen through-iron and give the direct above how long input)</td><td>CtW</td></tr>
