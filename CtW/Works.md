@@ -2,7 +2,8 @@
 
 <table>
 <tr><th>Work</th><th>Requirement</th><th>Description</th><th>Author</th></tr>
-<tr><td>g.general mobdrop, item duplicate</td><td>Rp Rs Bb/u</td><td>Die while reaching end portal duplicates the mob.<br>Usually lava can do this, but sometimes we need other damage</td><td>?</td></tr>
+<tr><td>g.general mobdrop, item duplicate</td><td>Pn</td><td>Killing zombies/husk while they convert into drowned/zombies causes held items to be duplicated.</td><td>ilmango</td></tr>
+<tr><td>g.general item duplicate</td><td>Rp Rs Bb/u</td><td>Die while reaching end portal duplicates the mob.<br>Usually lava can do this, but sometimes we need other damage</td><td>?</td></tr>
 <tr><td>g.general block duplicate</td><td>Js Pk</td><td>Large number of block updates(rail, sign, etc.) stop item from being consumed by player and NBT from being stored<br>Used to create skeleton skull before 1.13</td><td>Panda4994</td></tr>
 <tr><td>g.general duplicate; chunk saving preventer</td><td>Bs</td><td>Large number(>1MB) of info in a chunk fail to save. Book can easily contain such an amount of data</td><td>Ctw, etc.<sup>[1]</sup></td></tr>
 <tr><td>g.normal hostile mob drop</td><td>Pn Pf</td><td>Monsters spawn in a distance range and may move onto open trapdoor, falling down and being flushed for falling damage</td><td>-</td></tr>
