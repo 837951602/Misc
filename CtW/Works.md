@@ -66,5 +66,4 @@ May be outdated or missing for other authors, but not for ones by CtW
 <table>
   <tr><th>Author</th><th>Banned user</th><th>Note</th></tr>
   <tr><td>CtW</td><td>The RedPixel</td><td>Reason: Copying and claiming<br>Unban by creating 3 more works<br>Don't apply if used to make <a href="Ctw名词定义.md">works</a></td></tr>
-  <tr><td>CtW</td><td>mcbbs.net</td><td>Reason: 玄素引战<br>Unban by apologizing<br>Direct access can bypass this limitation</td></tr>
 </table>
