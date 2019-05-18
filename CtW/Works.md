@@ -59,11 +59,11 @@
 * -: Was created from the early period when Minecraft was not popular or by lots of people as soon as the based feature appear
 * [1]: Lots of users claim that they have found the solution but hide for security reason, so there may be lots of author
 
-# Ban List
+# Licences
 
 May be outdated or missing for other authors, but not for ones by CtW
 
 <table>
-  <tr><th>Author</th><th>Banned user</th><th>Note</th></tr>
-  <tr><td>CtW</td><td>The RedPixel</td><td>Reason: Copying and claiming<br>Unban by creating 3 more works<br>Don't apply if used to make <a href="Ctw名词定义.md">works</a></td></tr>
+  <tr><th>Author</th><th>Licence</th><th>Note</th></tr>
+  <tr><td>CtW</td><td>https://github.com/837951602/Misc/blob/master/CtW/CtwLicense.md</td><td></td></tr>
 </table>
