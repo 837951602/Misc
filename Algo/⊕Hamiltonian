@@ -1,3 +1,6 @@
 Dynamic Program(step)
 aba = aca
 abca = acba
+
+
+EDIT: No. In graph ...-1-2-3-4-..., both 2-1-2-3 and 2-3-4-3 map 2-3-2-3
