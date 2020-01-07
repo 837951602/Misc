@@ -3,6 +3,7 @@
 <table>
 <tr><th>Work</th><th>Requirement</th><th>Description</th><th>Author</th></tr>
 <tr><td>g.general item duplicate</td><td>Pn V(1.13.x)</td><td>Killing zombies/husk while they convert into drowned/zombies causes held items to be duplicated.</td><td>ilmango</td></tr>
+<tr><td>g.general item duplicate; mob GUI save preventer</td><td>MP V(1.14-)</td><td>When a player and a mob riding directly/player riding on the mob, the player exiting despawns the mob till his next entering, but GUI if opened by someone else can still be altered and not saved. <br>Founded and submitted by 延皓和赤柴凯撒 showing it applies to villager, and CtW and chyx showed it also applies to donkeys.</td><td>延皓和赤柴凯撒, Bad_Apples</td></tr>
 <tr><td>g.general mobdrop, item duplicate</td><td>Rp Rs Bb/u</td><td>Die while reaching end portal duplicates the mob.<br>Usually lava can do this, but sometimes we need other damage</td><td>?</td></tr>
 <tr><td>g.general block duplicate</td><td>Js Pk</td><td>Large number of block updates(rail, sign, etc.) stop item from being consumed by player and NBT from being stored<br>Used to create skeleton skull before 1.13</td><td>Panda4994</td></tr>
 <tr><td>g.general duplicate; chunk saving preventer</td><td>Bs</td><td>Large number(>1MB) of info in a chunk fail to save. Book can easily contain such an amount of data</td><td>Ctw, etc.<sup>[1]</sup></td></tr>
@@ -38,6 +39,7 @@
 * Mo: Need to be operator or with cheat on
 * Mm: Need command block
 * Mf: Need file access
+* MP: Require multiplayer
 * Pc: Require a non-AFK player(including active macro)
 * Pt: Require sometimes a non-AFK player
 * Pk: Require a player holding keys(can't chat, can't craft, etc.)
