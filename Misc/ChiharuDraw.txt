@@ -1,0 +1,22 @@
+Private Sub Form_Load()
+Picture = Clipboard.GetData
+Const W& = 100, H& = 100
+Dim x&, y&, t As Boolean, s As Boolean, g$, u$
+
+For x = 0 To W - 1
+    g = ""
+    For y = 0 To H
+        t = y < H And Me.Point(x, H - 1 - y) < &H800000
+        If t Xor s Then
+            g = g & Format(IIf(t, y, y - 1), "00")
+            s = t
+        End If
+    Next
+    x = x + 1
+    u = u & IIf(x < W, "k<" & x & "?" & Val(g) & ":", Val(g))
+    x = x - 1
+Next
+Clipboard.Clear
+Clipboard.SetText "-tools.function (s:=(x:=floor(x))-floor(x/3)*3)<1?9^323*9*0:(e:=((k:=x/100)" & Mid(u, 2) & ")/100^floor((h:=760540320100/10^(x-12*floor(x/12)))-10*floor(h/10)))-100*floor(e/100) -s 1 -e 9999.1"
+End
+End Sub
