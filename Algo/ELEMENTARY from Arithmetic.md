@@ -23,7 +23,7 @@ We can read an integer *a* as Σ*a<sub>i</sub>x<sup>i</sup>* where *x*=2<sup>ω<
 Now, to make parallel computation, we need vectors
 
 * Σ(*a<sub>i</sub>*+*b<sub>i</sub>*)*x<sup>i</sup>* = (Σ*a<sub>i</sub>x<sup>i</sup>*) + (Σ*b<sub>i</sub>x<sup>i</sup>*)
-* Σ*a<sub>i</sub>b<sub>n-i</sub>*ω*<sup>i</sup>* =<sup>[3]</sup> (Σ*a<sub>i</sub>x<sup>i</sup>*)(Σ*b<sub>i</sub>*(ω*x*)*<sup>i</sup>*)
+* Σ*a<sub>i</sub>b<sub>n-i</sub>*ω*<sup>i</sup>* =<sup>[3]</sup> [(Σ*a<sub>i</sub>*(ω*x*)*<sup>i</sup>*)(Σ*bx<sub>i</sub><sup>i</sup>*)]<sub>*n*</sub>
 
 Assuming *a<sub>i</sub>≥0*, then
 
