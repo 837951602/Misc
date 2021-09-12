@@ -44,6 +44,6 @@ As an example, we'll use it to solve bitand(*a*,*b*):
 
 [3] Here ω is just a large enough value smaller than *x*
 
-[4] In this section, an undefined value means a new free positive variable, with promise that only one value work
+[4] In this section, an undefined value means a new free positive variable, with promise that at most one value work
 
 [5] Definition of popcount used operation 2<sup>*a*</sup>, but we can easily generate a vector {*t<sub>i</sub>*} with its matching {2<sup>*t<sub>i</sub>*</sup>}
