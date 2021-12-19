@@ -199,7 +199,7 @@ function placetile(name_,x,y,z,dir_,loading_,conversion_,skipleveldialogue_,undo
 		unit.values[PATH_REQUIREMENT] = editor.values[PATHREQUIREMENT]
 		unit.strings[PATHOBJECT] = editor.strings[PATHOBJECT]
 	elseif (special == 3) then
-		--Tänne jotain?
+		--Tï¿½nne jotain?
 	end
 	
 	if (loading == false) and (conversion == false) and (undoing == false) and (dontadd == false) then
@@ -788,7 +788,34 @@ function editor_objectselectionhack(choice,id)
 		makeselection({"w1","w2","w3","w4","","w6","","w5"},choice + 1)
 	end
 end
-
+-- NON-VANILLA
+objectwordswap_table = {
+	{"fall","fallright","fallup","fallleft"},
+	{"nudgedown","nudgeright","nudgeup","nudgeleft"},
+	{"turn","deturn"},
+	{"open","shut"},
+	{"hot","melt"},
+	{"powered","power"},
+	{"red","brown","orange","yellow","lime","green","cyan","blue","purple","pink","rosy"},
+	{"black","grey","silver","white"},
+	-- NON-VANILLA
+	{"down","right","up","left"},
+	{"you","you2","3D"},
+	{"push","pull","stop"},
+	{"lockdown","lockright","lockup","lockleft"},
+	{"group","group2","group3","group4"},
+	{"is","has","eat","fear","follow","make","mimic","play"},
+	{"below","besideright","above","besideleft"},
+	{"on","near","nextto","facing","seeing","without","feeling"},
+	{"idle","lonely","often","seldom"},
+	{"and","not"}
+}
+objectwordswap_map = {}
+for u,i in ipairs(objectwordswap_table) do
+	for v,j in ipairs(i) do
+		objectwordswap_map [j] = i
+	end
+end
 function objectwordswap(id,dir_)
 	local unit = mmf.newObject(id)
 	local realname = unit.strings[NAME]
@@ -852,42 +879,14 @@ function objectwordswap(id,dir_)
 				end
 			end
 		end
-	elseif ((t == 2) and (unittype == "text") and (string.sub(name, 1, 5) == "text_")) or (name == "text_powered") then
+	elseif ((t ~= 0) and (unittype == "text") and (string.sub(name, 1, 5) == "text_")) then
 		local shortname = string.sub(name, 6)
 		
-		local pairings =
-		{
-			fall = {"fall","fallright","fallup","fallleft"},
-			nudge = {"nudgedown","nudgeright","nudgeup","nudgeleft"},
-			turn = {"turn","deturn"},
-			deturn = {"turn","deturn"},
-			open = {"open","shut"},
-			shut = {"open","shut"},
-			hot = {"hot","melt"},
-			melt = {"hot","melt"},
-			power = {"powered","power"},
-			powered = {"power","powered"},
-			red = {"red","brown","orange","yellow","lime","green","cyan","blue","purple","pink","rosy"},
-			brown = {"brown","orange","yellow","lime","green","cyan","blue","purple","pink","rosy","red"},
-			orange = {"orange","yellow","lime","green","cyan","blue","purple","pink","rosy","red","brown"},
-			yellow = {"yellow","lime","green","cyan","blue","purple","pink","rosy","red","brown","orange"},
-			lime = {"lime","green","cyan","blue","purple","pink","rosy","red","brown","orange","yellow"},
-			green = {"green","cyan","blue","purple","pink","rosy","red","brown","orange","yellow","lime"},
-			cyan = {"cyan","blue","purple","pink","rosy","red","brown","orange","yellow","lime","green"},
-			blue = {"blue","purple","pink","rosy","red","brown","orange","yellow","lime","green","cyan"},
-			purple = {"purple","pink","rosy","red","brown","orange","yellow","lime","green","cyan","blue"},
-			pink = {"pink","rosy","red","brown","orange","yellow","lime","green","cyan","blue","purple"},
-			rosy = {"rosy","red","brown","orange","yellow","lime","green","cyan","blue","purple","pink"},
-			black = {"black","grey","silver","white"},
-			grey = {"grey","silver","white","black"},
-			silver = {"silver","white","black","grey"},
-			white = {"white","black","grey","silver"},
-		}
-		
-		for i,v in pairs(pairings) do
+		v = objectwordswap_map[shortname]
+		if (v ~= nil) then
 			--MF_alert(string.sub(shortname, 1, #i) .. ", " .. i)
 			
-			if (string.sub(shortname, 1, #i) == i) then
+			--if (string.sub(shortname, 1, #i) == i) then
 				local current = 0
 				local starting = 0
 				local total = #v
@@ -928,8 +927,8 @@ function objectwordswap(id,dir_)
 					current = (current + dir + total) % total
 				end
 				
-				break
-			end
+				--break
+			--end
 		end
 	end
 end
