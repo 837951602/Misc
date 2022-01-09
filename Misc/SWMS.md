@@ -26,7 +26,7 @@ DX300 is the only choice.
 
 Now we have 3 XBUSs, the on time, the off time, and the DX300, each of which are readable
 (Though we don't read info from DX300). To fit the limit of MC4000, we need to connect two onto one wire.
-Here the on time and the off time are connected to x0.
+Here the on time and the off time are connected to x0. You can try to share any two or even all three, and their code fit in an MC6000 so easy to test.
 
 Because of the randomness, we need to read x0 multiple times:
 
