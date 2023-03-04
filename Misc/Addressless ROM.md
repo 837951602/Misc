@@ -70,7 +70,7 @@ with source
     1,-1,2
     100,2,-1
     100,999,-1
-    100,-999,-1
+    100,-999,2
 
 Here `sub` is used to avoid confusion between `1` in `add 1` and `teq x0 1`, and `sleep -1` to avoid mistaken with `teq x0 0`.
 
