@@ -25,3 +25,4 @@ Let a be the node where most edges comes from a. If some b is not in G(a) or G(G
 
 and b is at least 1 out edge more than a. Thus b is in G(a) or G(G(a)).
 
+Doesn't work if there's no node. An extra bit can be provided in this case.
