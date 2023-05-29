@@ -1,0 +1,10 @@
+Lock-free: Given some threads infinite runtime, some thread make progress
+Wait-free: For each thread given infinite runtime, it make progress
+
+Not Lock-free:
+A(lock) B(lock-failed) B(lock-failed) B(lock-failed) ...
+No thread make progress
+
+Lock-free, Not Wait-free:
+A(read) B(read) A(CAS) B(CAS-failed) A(read) B(read) A(CAS) B(CAS-failed) A(read) B(read) A(CAS) B(CAS-failed) ...
+B is given infinite runtime but make no progress
